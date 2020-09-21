@@ -1,0 +1,253 @@
+#outer
+{
+height:auto;
+width:100%;
+//border:1px solid red;
+background-image:url(Image/back.jpg);
+opacity:4;
+}
+#outer1
+{
+height:auto;
+width:90%;
+//border:1px solid blue;
+margin-left:70px;
+background-color:gray;
+}
+
+#header
+{
+	height:100px;
+	width:100%;
+	border:1px solid;
+}
+#img
+{
+	height:100px;
+	width:250px;
+	float:left;
+}
+#text
+{
+	height:100px;
+	width:500px;
+	float:left;
+}
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: black;
+}
+
+.navbar a.active {
+  background-color: gray;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#slider
+{
+	height:800px;
+	width:100%;
+	//border:5px solid red;
+	
+}
+#example
+{
+	height:500px;
+	width:100%;
+	//border:1px solid green;
+}
+#footer
+{
+	height:50px;
+	width:100%;
+	//border:1px solid;
+	background-color:blue;
+}
+#left
+{
+	height:500px;
+	width:50%;
+	//border:1px solid;
+	float:left;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+  //background-image:url(Image/back1.jpg);
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+#part
+{
+	height:200px;
+	width:100%;
+	//border:1px solid;
+}
+#part1
+{
+	height:180px;
+	width:250px;
+	//border:1px solid;
+	margin:5px;
+	float:left;
+	margin-left:30px;
+}
+#part2
+{
+	height:180px;
+	width:250px;
+	//border:1px solid;
+	margin:5px;
+	float:left;
+	margin-left:30px;
+}
+#part3
+{
+	height:180px;
+	width:250px;
+	//border:1px solid;
+	margin:5px;
+	float:left;
+	margin-left:30px;
+}
+#part4
+{
+	height:180px;
+	width:250px;
+	//border:1px solid;
+	margin:5px;
+	float:left;
+	margin-left:30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
